@@ -4,7 +4,12 @@ import RevenueChart from '@/app/ui/dashboard/revenue-chart';
 import { lusitana } from '@/app/ui/fonts';
 import { CardSkeleton, LatestInvoicesSkeleton, RevenueChartSkeleton } from '@/app/ui/skeletons';
 import { Suspense } from 'react';
+import { Metadata } from 'next';
  
+export const metadata: Metadata = {
+  title: 'Home',
+};
+
 export default async function Page() {
   // const revenue = await fetchRevenue();
   return (
